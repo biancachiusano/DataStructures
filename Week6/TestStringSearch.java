@@ -1,0 +1,35 @@
+
+import java.util.Arrays;
+
+public class TestStringSearch {
+
+	private static String DNA = "GGTGTAGCAGAGAAGACGCCTTCTGAATTGTGCAATCCCTCCACCTTATCTAAGCTTGCTACCAATAATTAGCATTTTTGCCTTGCGACAGACCTCCTACTTAGATTGCCACACATTGAGCTAGTCAGTGAGCGATAAGCTTGACGCGCTTTCAAGGGTCGCGAGTACGTGAACTAAGGCTCCGGACAGGACTATATACTTGGGTTTGATCTCGCCCCGACAACTGCAAACCTCAACTTTTTTAGATTATATGGTTAGCCGAAGTTGCACGAGGTGGCGTCCGCGGACTGCTCCCCGAGTGTGGCTCTTTCATCTGACAACGTGCAACCCCTATCGCGGCCGATTGTTTCTGCGGACGATGTTGTCCTCATAGTTTGGGCATGTTTCCCTTGTAGGTGTGAAACCACTTAGCTTCGCGCCGTAGTCCCAATGAAAAACCTATGGACTTTGTTTTGGGTAGCACCAGGAATCTGAACCGTGTGAATGTGGACGTCGCGCGCGTAGACCTTTATCTCCGGTTCAAGCTAGGGATGTGGCTGCATGCTACGTTGTCACACCTACACTGCTCGAAGTAAATATGCGAAGCGCGCGGCCTGGCCGGAGGCGTTCCGCGCCGCCACGTGTTCGTTAACTGTTGATTGGTGGCACATAAGCAATATCGTAGTCCGTCAAATTCAGCTCTGTTATCCCGGGCGTTATGTGTCAAATGGCGTAGAACGGGATTGACTGTTTGACGGTAGCTGCTGATCGGTACGGTAACGGAGAATCTGTCGGGCTATGTCACTAATACTTTCCAAACGCCCCGTACCGATGCTGAACAAGTCGATGCAGGCTCCCGTCTTTGAAAAGGGGTAAACATACAAGTGGATAGATGATGGGTAGGGGCCTCCAATACATCCAACACTCTACGCCCTCTCCAAGAGCTAGAAGGGCACCCTGCAGTTGGAAAGGGAACTATTTCGTAAGGCGAGCCCATACCGTCACTCATGCGGAAGACTTA";
+	static String t="XGGTGTAGCAGAGAAGACGCCTTCTGAATTGTGCAATCCCTCCACCT";
+
+	public static void main(String[]args) {
+		String pattern = " ";
+		String text = "I am going to the park.";
+		String x="AATTAAAGCGGCTGCACTGCTGTAAGGACGATTACGGAGTGGGACGGCCTG";
+		String p="GGGA";
+		String y="AT";
+		String cat = "AAA";
+		String tt = "AAAAAABBBAAABAAAABBBB";
+
+		String test1 ="ccgtccaaattgcactaactaacagtctgcagggcggctttatacttccgaccagatgaacgagattccatatccttatgccctatgatcaaccttgtactacttttccgtccgcacgactatggattatggcgggcgattgagacgggtcccctatgtaactatcagtgtcgcatttccatctagcattattgtaaattttgaacttaatacggaccattgcagcaatttacctgtgtttggttgtgccgcacaactacagtgactggcagttgtactaaaaactaacaaatgcaattctgtacaacaatttgagcctaatcgagagcttccggattgaaccacccctgagggtgcacatgggccacgcgtttatcttggccaaggtgtacctcatatgacgccacggatctgtagcaaacgaacggcctgaaaccttgacggcttgccggatcgatacacaggcggtagtggatgctgcattgtggccgctccggcccatcggtttgacctgtccgcttcctggatgccatttcaacatgtagacgacccacacgacggcaccgacgtgtaaagaccgctattggtatcgcatggcccctggtttcagtataagagtcggcacctattattcgtagctgcacgtgcggtaagcgacagggctacacgaaactggccgggacggcaatggatattcctgggtgtttgggatcattggtgcaaacttgcgttctgtaaccgcccccagtcaccatccgctcgctcagacccatataggacccagtccttcgtagtaggccattagcgtgcgatgtgttcctcaagaccttgacctccatcgagctgagatatgaccatagttggagtattaagcccccttaagccactgtgctgagtactcgtcccaaaatcactgtatatctggagggttttaaccgggccgactttcacctgaatatctgtttgaatactacataaatttgggcgcccggtactgttg"; //1000 characters ends at text[999]
+		String one="cagt";
+		String two="gggc";
+		String three="hh";
+
+		int[] exp = {0,1,2,3,9,13};
+	//	System.out.println(Arrays.toString(StringSearch.patternMatch(pattern, pattern)));
+	//	System.out.println(Arrays.toString(StringSearch.patternMatch(y, DNA)));
+		//System.out.println(Arrays.toString(StringSearch.patternMatch(DNA, "A")));
+	//	System.out.println(Arrays.toString(StringSearch.patternMatch(tt, cat)));
+		//System.out.println(Arrays.toString(StringSearch.patternMatch(test1, one)));
+		System.out.println(Arrays.toString(StringSearch.patternMatch(test1, two)));
+		//System.out.println(Arrays.toString(StringSearch.patternMatch(test1, three)));
+
+
+
+	}
+}
